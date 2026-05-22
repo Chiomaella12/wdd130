@@ -42,12 +42,18 @@
    }
    p {
        margin: 1rem;
+       padding: 0%;
    }
 
    aside {
        width: 20em;
        Text-align: center;
        position: relative;
+       margin: 1rem;
+        border: 1px solid;
+        padding: 1rem;
+        background-color: #eee;
+        color: #000;
    }
 
    aside img {
@@ -72,7 +78,7 @@
    /* Class Selectors*/
    .box {
        margin: 1rem;
-       border: 1px solid(0, 0, 0, .1); 
+       border: 1px solid; 
        padding: 1rem;
        background-color: #eee;
        color: #000;
