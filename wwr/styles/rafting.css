@@ -1,7 +1,18 @@
-header {
-    background-color:white;
-    color: lightgoldenrodyellow;
-}
+: root {
+    --primary-color: #055a05;
+    /* forest green*/
+    --secondary-color: #f4a261;
+    /* warm sand*/
+    --accent1-color: 3264653;
+    /* dark slateblue*/
+    --accent2-color: #e9c46a;
+
+    /* light golden yellow*/
+    --heading-font: "times new roman" georgia" serif;
+    }
+    header {
+        background-color: forestgreen;
+        color: darkslateblue;}
 *{
     margin: 0;
     padding: 0;
@@ -30,7 +41,7 @@ h2,article{
 .socialmedia a{
     text-decoration: none;
 }
-.hero img{
+.hero{
     position:relative;
     width: 100%;
 }
@@ -49,7 +60,8 @@ h1{
     background-color:darkslateblue;
     color: orangered;/* white text- make sure there is enough contrast with the background-color*/
 }
-.hero article img{
+.hero article {
+    position: absolute;
     float: right;
     width: 125px;
     
