@@ -29,6 +29,7 @@ body{
 h1,h2{
     font-family: var(--heading-font);
     color: var(--primary-color);
+    padding: 5rem;
 }
 nav, p, section,article{
     margin: 16px;
