@@ -8,12 +8,9 @@
     --accent2-color: #e9c46a;
     /* light golden yellow*/
     --heading-font: "times new roman" georgia" serif;
-
-}
-
 header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color)
+    background-color:forestgreen;
+    color:darkslateblue;
 }
 *{
     margin: 0;
@@ -21,15 +18,15 @@ header {
     box-sizing: border-box;
 }
 body{
-    font-family: var(--heading-font);
+    font-family:'Times New Roman', Times, serif;
 
 }header, main, footer{
     width: 840px;
     margin: 0 auto;
 }
 h1,h2{
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+    font-family:'Times New Roman', Times, serif;
+    color:forestgreen;
     padding: 10rem;
 }
 nav,section,p {
@@ -59,7 +56,7 @@ h1{
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-color);
+    background-color:darkslateblue;
     color: orangered;/* white text- make sure there is enough contrast with the background-color*/
 }
 .hero article img{
