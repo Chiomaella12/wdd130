@@ -76,9 +76,9 @@ h1{
 }
 .hero article{
     position: absolute;
-    max-width:700;
+    max-width:700%;
     padding:2rem;
-    background-color:var(--accent2-color)
+    background-color:var(--accent2-color);
     border-radius: 12px;
 
 
