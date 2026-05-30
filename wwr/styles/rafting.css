@@ -22,7 +22,7 @@
 nav{
     display: flex;
     /* logo takes natural width, nav fills remaining space*/
-    align-items: flex;
+    align-items: center;
     padding: 10px;
     
 }
@@ -35,7 +35,7 @@ nav ul {
     margin: 30px;
     padding: 5px;
     display: grid;
-    justify-content: grid;
+    justify-content: center;
     gap: 0;
     grid-template-columns: 120px 120px 120px 120px;
     background-color: rgb(76, 149, 212);
@@ -96,10 +96,7 @@ footer{
     margin-left: 10px;
 }
 .hero img{
-    position:relative;
-    width: 100%;
-}
-.hero img{
+    position: relative;
     display:block;
     width:100%;
     height:auto
@@ -124,39 +121,38 @@ h1{
     position: relative;
     width: 100%;
   
-   
-
 }
 .hero article{
     position: absolute;
     max-width:700%;
     padding:5rem;
-    background-color:var(--accent2-color);
+    background-color:var(--primary-color);
     border-radius: 12px;
     top: 50%;}
-
-    .history{
+    
+    
+.history{
         text-align: center;
         margin:2rem 0;
     }
-    .history-content{
+.history-content{
         display: grid;
         grid-template-columns: 1fr 200px 1fr;
         gap: 20px;
         align-items: center;
        
     }
-    .history-content img{
+.history-content img{
         width: 110%;
         height: auto;
     }
-    .adventure-gallery{
+.adventure-gallery{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         gap: 15px;
-        text-align: centre;
+        text-align: justify;
     }
-    .adventure-gallery img{
+.adventure-gallery img{
         width: 100%;
         height: auto;
       
