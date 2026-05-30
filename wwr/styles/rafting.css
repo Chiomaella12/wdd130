@@ -3,7 +3,7 @@
     /* forest green*/
     --secondary-color:rgb(0 0 0);
     /* warm sand*/
-    --accent1-color: 3264653;
+    --accent1-color:rgb(0 0 0);
     /* dark slateblue*/
     --accent2-color:rgb(255 255 255);
     /* light golden yellow*/
@@ -44,11 +44,11 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color:var(--accent2-color);
     padding: 5px;
     list-style-type: none;
     display: block;
-    border: 1px solid white;
+    border: 1px solid var(--accent2-color);
     text-align: center;
 }
     
@@ -62,7 +62,7 @@ body{
     color:var(--accent1-color)
     
 }
-header,main, footer{
+header,main,footer{
     width: 840px;
     margin: 0 auto;
 }
@@ -86,6 +86,7 @@ footer{
     align-items: center;
     background-color:var(--primary-color);
     padding: 15px;
+    width
 }
 
 .socialmedia a{
