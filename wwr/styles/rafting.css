@@ -12,18 +12,21 @@
 }
  header {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 200px 1fr;
     /* logo takes natural width, nav fills remaining space*/
     align-items: center;
-    padding: 10px 20px;
+    padding:  20px;
     background-color: white;
     
 } 
+header img{
+    width:100px 
+}
 nav{
     display: flex;
     /* logo takes natural width, nav fills remaining space*/
-    align-items: center;
-    padding: 10px;
+    justify-content: end;
+    
     
 }
 .logo{
@@ -33,7 +36,7 @@ nav{
 nav ul {
     
     margin: 30px;
-    padding: 5px;
+    padding: 10px;
     display: grid;
     justify-content: center;
     gap: 0;
@@ -46,8 +49,6 @@ nav a {
     text-decoration: none;
     color:var(--accent1-color);
     padding: 5px;
-    list-style-type: none;
-    display: block;
     border: 1px solid var(--accent2-color);
     text-align: center;
 }
@@ -57,10 +58,84 @@ nav a {
     padding: 0;
     box-sizing: border-box;
 }
+/*COMPANY INFO*/
+.Company-info{
+    text-align: center;
+    padding: 20px;
+}
+.Company-info h1{
+    margin-bottom: 10px;
+}
+
+.contact-container{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.map img,{
+    width: 100px;
+    height: 100px;
+}
+.map{
+    width: 100px;
+}
+.contact-form{
+    width: 50%;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.contact-form textarea{
+    height: 50px;
+}
+.contact-form button{
+    padding: 12px;
+    background-color: #ddd;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+
 body{
     font-family:var(--body-font);
-    color:var(--accent1-color)
+    color:var(--accent1-color);
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0;
     
+}
+/*EMPLOYEE SECTION*/
+.employees{
+    border: 1px solid gray;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.employees h2{
+    margin-bottom: 30px;
+}
+.employees{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.employees h2{
+    width: 100%;
+
+}
+.employees figure{
+    text-align: center;
+}
+.employees img{
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
 }
 header,main,footer{
     width: 840px;
@@ -74,15 +149,13 @@ h1,h2{
 p {
     margin: 16px;
     padding: 8px;
-    background-color: var(--primary-color);
+    
 }
-section {
-    margin: 16px;
-    padding: 8px;
-}
+
+
 footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color:var(--primary-color);
     padding: 15px;
@@ -95,69 +168,17 @@ footer{
 .socialmedia img{
     width: 32px;
     margin-left: 10px;
-}
-.hero img{
-    position: relative;
-    display:block;
-    width:100%;
-    height:auto
-}
+    display: flex;
+    gap: 15px;}
 h1{
-    position: absolute;
-    top: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color:var(--primary-color);
     color:black; /* white text- make sure there is enough contrast with the background-color*/
     
 }
-.hero article img {
-    float: right;
-    width: 150px;
-    
-}
-.hero{
-    position: relative;
-    width: 100%;
-  
-}
-.hero article{
-    position: absolute;
-    max-width:700%;
-    padding:5rem;
-    background-color:var(--primary-color);
-    border-radius: 12px;
-    top: 50%;}
-    
-    
-.history{
-        text-align: center;
-        margin:2rem 0;
-    }
-.history-content{
-        display: grid;
-        grid-template-columns: 1fr 200px 1fr;
-        gap: 20px;
-        align-items: center;
-       
-    }
-.history-content img{
-        width: 110%;
-        height: auto;
-    }
-.adventure-gallery{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        gap: 15px;
-        text-align: justify;
-    }
-.adventure-gallery img{
-        width: 100%;
-        height: auto;
-    }
-    .no-bullets ul,li{
+ .no-bullets ul,li{
         list-style-type: none;
     }
 
