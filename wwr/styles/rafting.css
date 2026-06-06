@@ -1,37 +1,39 @@
 :root {
-    --primary-color:rgb(76 149 212);
+    --primary-color: rgb(76 149 212);
     /* forest green*/
-    --secondary-color:rgb(0 0 0);
+    --secondary-color: rgb(0 0 0);
     /* warm sand*/
-    --accent1-color:rgb(0 0 0);
+    --accent1-color: rgb(0 0 0);
     /* dark slateblue*/
-    --accent2-color:rgb(255 255 255);
+    --accent2-color: rgb(255 255 255);
     /* light golden yellow*/
-    --heading-font:'Times New Roman', Times, serif;
+    --heading-font: 'Times New Roman', Times, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
- header {
+
+header {
     display: grid;
     grid-template-columns: 200px 1fr;
     /* logo takes natural width, nav fills remaining space*/
     align-items: center;
-    padding:  20px;
+    padding: 20px;
     background-color: white;
-    
-} 
-header img{
-    width:100px 
+
 }
-nav{
+
+header img {
+    width: 100px
+}
+
+nav {
     display: flex;
     /* logo takes natural width, nav fills remaining space*/
     justify-content: end;
-    
-    
+
 }
 
 nav ul {
-    
+
     margin: 30px;
     padding: 10px;
     display: grid;
@@ -41,91 +43,99 @@ nav ul {
     background-color: rgb(76, 149, 212);
 }
 
-
 nav a {
     text-decoration: none;
-    color:var(--accent1-color);
+    color: var(--accent1-color);
     padding: 5px;
     border: 1px solid var(--accent2-color);
     text-align: center;
 }
-    
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /*COMPANY INFO*/
-.Company-info{
+.Company-info {
     text-align: center;
     padding: 20px;
 }
-.Company-info h1{
+
+.Company-info h1 {
     margin-bottom: 10px;
 }
 
-.contact-container{
+.contact-container {
     display: flex;
     gap: 20px;
-    align-items:flex-end;
-  
+    align-items: flex-end;
+
 }
 
-.map img{
+.map img {
     width: 100px;
     height: 100px;
     border: 0;
 
 }
-.map iframe{
+
+.map iframe {
     width: 350px;
     height: 380px;
     border: none;
 }
-.map{
+
+.map {
     width: 200px;
 }
-.contact-form{
+
+.contact-form {
     display: flex;
     flex-direction: column;
     text-align: left;
     width: 350px;
-    margin-left:auto;
+    margin-left: auto;
     position: relative;
     top: -10px;
 
 }
-.contact-form p{
+
+.contact-form p {
     margin-bottom: 10px;
 }
+
 .contact-form input[type="text"],
 .contact-form input[type="email"],
-.contact-form textarea{
+.contact-form textarea {
     padding: 5px;
     margin-bottom: 10px;
 }
-.contact-form textarea{
+
+.contact-form textarea {
     width: 250px;
     height: 50px;
 }
-.contact-form button{
+
+.contact-form button {
     padding: 12px;
     background-color: #ddd;
     border: 1px solid gray;
     cursor: pointer;
 }
 
-
-body{
-    font-family:var(--body-font);
-    color:var(--accent1-color);
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
     max-width: 2000px;
     margin: 0 auto;
     padding: 0;
-    
+
 }
+
 /*EMPLOYEE SECTION*/
-.employees{
+.employees {
     border: 1px solid gray;
     margin: 20px;
     padding: 20px;
@@ -134,68 +144,74 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.employees h2{
+
+.employees h2 {
     margin-bottom: 30px;
-    width:100%;
+    width: 100%;
 
 }
 
-.employees figure{
+.employees figure {
     text-align: center;
 }
-.employees img{
+
+.employees img {
     width: 200px;
     height: 120px;
     object-fit: cover;
 }
-header,main,footer{
+
+header,
+main,
+footer {
     width: 840px;
     margin: 0 auto;
 }
-h1,h2{
-    font-family:var(--heading-font);
-    color:var(--secondary-color);
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
     padding: 17rem;
 }
+
 p {
     margin: 16px;
     padding: 8px;
-    
+
 }
 
-
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:var(--primary-color);
+    background-color: var(--primary-color);
     padding: 15px;
-    
+
 }
 
-.socialmedia a{
-    text-decoration: none;}
-    
-.socialmedia img{
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
     width: 32px;
     margin-left: 10px;
     display: flex;
-    gap: 15px;}
-h1{
+    gap: 15px;
+}
+
+h1 {
     width: 100%;
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    color:black; /* white text- make sure there is enough contrast with the background-color*/
-    
+    color: black;
+    /* white text- make sure there is enough contrast with the background-color*/
+
 }
- .no-bullets ul,li{
-        list-style-type: none;
-    }
 
-   
-    
-    
-
-
-
+.no-bullets ul,
+li {
+    list-style-type: none;
+}
