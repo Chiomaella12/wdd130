@@ -83,7 +83,7 @@ nav a {
 .map iframe{
     width: 350px;
     height: 380px;
-    border: 0;
+    border: none;
 }
 .map{
     width: 200px;
@@ -133,16 +133,14 @@ body{
     margin: 20px;
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .employees h2{
     margin-bottom: 30px;
     width:100%;
-}
-.employees{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
+
 }
 
 .employees figure{
