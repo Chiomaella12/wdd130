@@ -167,6 +167,12 @@ footer {
     width: 840px;
     margin: 0 auto;
 }
+.hero img{
+    position: absolute;
+    width: 100%;
+    height:auto;
+    display:block;
+}
 
 h1,
 h2 {
@@ -180,8 +186,55 @@ p {
     padding: 8px;
 
 }
+.newsletter{
+    text-align: center;
+    padding: 20px;
+}
+.newsletter form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+.newsletter input, .newsletter button{
+    padding: 10px;
+    margin: 8px 0;
+}
+.cta{ 
+    text-align: center;
+    padding: 40px;
+}
+.cta-button{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 
+}
+.cta-button:hover{
+    background-color: black;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+
+
+.card{
+    text-align: center;
+}
+.card img{
+    width: 100%;
+    height:auto;
+    border-radius: 8px;
+}
 footer {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
