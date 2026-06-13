@@ -201,6 +201,7 @@ footer {
 }
 .hero article img{
     width: 150px;
+    float: right;
 }
 .history{
     text-align: center;
